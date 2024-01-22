@@ -23,7 +23,7 @@ const { migrar } = require("./src/db_flight/upload_db.js");
 // Syncing all the models at once.
 conn.sync({ force: false }).then(() => {
   server.listen(process.env.PORT || 3001, () => {
-    migrar();
+    //migrar();
     console.log("%s listening at 3001"); // eslint-disable-line no-console
   });
 });
